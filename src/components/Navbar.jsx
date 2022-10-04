@@ -1,11 +1,5 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+import {AppBar , Box , Toolbar , Button, IconButton}from '@mui/material';
 import Logo from "../assets/logo.png"
 
 const Navbar=()=> {
@@ -23,7 +17,7 @@ const Navbar=()=> {
            <img src={Logo} alt="" style={{height:40,width:140}}/>
           </IconButton>
           
-          <Button color="inherit" sx={{backgroundColor:"yellow",fontWeight:700 ,color:"black"}}>Login/SignUp</Button>
+          <Button color="inherit" className='loginbutton' sx={{backgroundColor:"#8c52ff",fontWeight:700 ,color:"white"}}>Login/SignUp</Button>
         </Toolbar>
       </AppBar>
     </Box>
