@@ -1,7 +1,11 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import {Tabs , Tab , Typography , Box} from '@mui/material';
-
+import Feed from './Feed/Feed';
+import Myfeed from './MyFeed/Myfeed';
+import SavedPost from './SavedPosts/Savedpost';
+import TaskManagement from './TaskManagement/TaskManagement';
+import TaskDashboard from './TaskDashboard/TaskDashboard';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -63,19 +67,19 @@ const Dashboard=()=> {
         
       </Tabs>
       <TabPanel value={value} index={0}>
-        Item One
+        <Feed/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <Myfeed/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <SavedPost/>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+       <TaskManagement/>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Item Five
+       <TaskDashboard/>
       </TabPanel>
       <TabPanel value={value} index={5}>
         Item Six

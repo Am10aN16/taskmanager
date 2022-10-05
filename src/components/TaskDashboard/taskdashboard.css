@@ -1,0 +1,20 @@
+.leftcolumn {
+    background-color: gold;
+    height: 50px;
+    border: 2px solid black ;
+    border-radius: 2px;
+    padding: 8px;
+    font-weight: bolder;
+    text-align: center;
+    margin-right: 2px;
+    margin-bottom: 2px;
+  }
+  .rightcolumn {
+    background-color: yellowgreen;
+    height: 50px;
+    border: 2px solid black ;
+    border-radius: 2px;
+    padding: 8px;
+    font-weight: bolder;
+    text-align: center;
+  }
