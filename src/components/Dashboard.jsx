@@ -6,6 +6,7 @@ import Myfeed from './MyFeed/Myfeed';
 import SavedPost from './SavedPosts/Savedpost';
 import TaskManagement from './TaskManagement/TaskManagement';
 import TaskDashboard from './TaskDashboard/TaskDashboard';
+import Profile from './MyProfile/Profile';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -82,7 +83,7 @@ const Dashboard=()=> {
        <TaskDashboard/>
       </TabPanel>
       <TabPanel value={value} index={5}>
-        Item Six
+       <Profile/>
       </TabPanel>
       
     </Box>
